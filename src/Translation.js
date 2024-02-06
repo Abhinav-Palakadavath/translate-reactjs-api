@@ -50,7 +50,7 @@ const Translation = () => {
 
   return (
     <div className=''>
-      <h1 className='col-lg'><img src="/image/up-and-down-arrow.png" height="50px" width="50px" alt='An image is here' />
+      <h1 className='col-lg'><img src="/image/up-and-down-arrow.png" height="50px" width="50px" alt='is here' />
         Translate It!</h1>
       <div className='col-lg d-flex justify-content-center'>
         <div className='source-text'>
