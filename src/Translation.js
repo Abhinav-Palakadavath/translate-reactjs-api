@@ -50,7 +50,8 @@ const Translation = () => {
 
   return (
     <div className=''>
-      <h1 className='col-lg'>Translate It!</h1>
+      <h1 className='col-lg'><img src="/image/up-and-down-arrow.png" height="50px" width="50px" alt='An image is here' />
+        Translate It!</h1>
       <div className='col-lg d-flex justify-content-center'>
         <div className='source-text'>
           <label>Source :</label>
@@ -75,16 +76,17 @@ const Translation = () => {
           value={inputText}
           onChange={handleInputChange}
         />
-       </div>
-        <div className='button-class'>
-          <button type='button' className='btn btn-primary btn-lg' onClick={handleTranslate}>Translate</button>
-        </div>
+      </div>
+      <div className='button-class'>
+        <button type='button' className='btn btn-secondary btn-lg' onClick={handleTranslate}>Translate</button>
+      </div>
       {translatedText && (
         <div className='translated'>
           <h5>Translated Text:</h5>
           <p>{translatedText}</p>
         </div>
       )}
+
     </div>
   );
 };
