@@ -7,7 +7,7 @@ const Translation = () => {
   const [sourceLanguage, setSourceLanguage] = useState('en');
   const [targetLanguage, setTargetLanguage] = useState('en');
   const [translatedText, setTranslatedText] = useState('');
-  const [apiKey] = useState('61d8b4b0cbmsh7b5b5bf5f02628dp1ff914jsne2c8a58e9e8d');
+  const [apiKey] = useState(process.env.REACT_APP_API_KEY);
 
   const handleInputChange = (e) => {
     setInputText(e.target.value);
